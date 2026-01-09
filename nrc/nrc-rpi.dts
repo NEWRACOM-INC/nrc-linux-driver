@@ -20,6 +20,7 @@
 				reg = <0>;  				/* CS Number */
 				interrupt-parent = <&gpio>;
 				interrupts = <5 4>;  			/* GPIO Number */ /* IRQ_TYPE_LEVEL_HIGH */
+				reset-gpios = <&gpio 4 0>;		/* Reset GPIO: GPIO4, ACTIVE_HIGH */
 				spi-max-frequency = <20000000>;		/* Max Freq */
 			};
 		};
